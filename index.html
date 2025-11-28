@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Marvel Tech — Service Report</title>
+    <link rel="stylesheet" href="Marveltech.css">
+    <link rel="stylesheet" href="design.css">
+    <style>
+        @media print { .noPrint { display:none !important; } }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <img src="Marvel Logo.jpg" alt="Marvel Tech logo" class="logo left-logo" />
+            <div>
+                <h1 class="title">Marvel Tech</h1>
+                <strong> <p class="description">Your Dream Our Vision</p> </strong>
+                <strong> <p class="subtitle">On-site Service Report</p> </strong>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <form id="service-report" class="service-form" aria-label="Service report form">
+            <div class="form-grid">
+                <label for="customerName">Customer Name</label>
+                <input id="customerName" name="customerName" type="text" placeholder="Company name" />
+
+                <label for="address">Address</label>
+                <textarea id="address" name="address" placeholder="Company address" class="resizable"></textarea>
+
+                <label for="tel">Tel</label>
+                <input id="tel" name="tel" type="tel" inputmode="tel" placeholder="Contact number" />
+
+                <label for="contactPerson">Contact Person</label>
+                <input id="contactPerson" name="contactPerson" type="text" placeholder="Person's name" />
+
+                <label for="purpose">Purpose of Visit</label>
+                <textarea id="purpose" name="purpose" placeholder="Reason for visit" class="resizable"></textarea>
+
+                <label for="engineer">Engineer Attended</label>
+                <input id="engineer" name="engineer" type="text" placeholder="Engineer's name" />
+
+                <label for="dateAttended">Date of Service</label>
+                <input id="dateAttended" name="dateAttended" type="date" />
+
+                <label for="timeIn">Time IN</label>
+                <input id="timeIn" name="timeIn" type="time" />
+
+                <label for="timeOut">Time OUT</label>
+                <input id="timeOut" name="timeOut" type="time" />
+
+                <label for="actionTaken">Action Taken</label>
+                <textarea id="actionTaken" name="actionTaken" placeholder="Summary of work performed" class="resizable large"></textarea>
+
+                <label for="serviceType">Type of Service</label>
+                <select id="serviceType" name="serviceType">
+                    <option value="warranty">Warranty</option>
+                    <option value="amc">AMC</option>
+                    <option value="chargeable">Chargeable</option>
+                </select>
+
+                <label for="machineDetails">Machine Details</label>
+                <textarea id="machineDetails" name="machineDetails" placeholder="Model / description" class="resizable"></textarea>
+
+                <label for="systemDetails">System Details</label>
+                <textarea id="systemDetails" name="systemDetails" placeholder="OS / software / config" class="resizable"></textarea>
+
+                <label for="serviceCharges">Service Charges</label>
+                <input id="serviceCharges" name="serviceCharges" type="number" step="0.01" placeholder="Amount" />
+
+                <label for="serialNumber">Machine Serial Number</label>
+                <input id="serialNumber" name="serialNumber" type="text" />
+
+                <label for="machineMake">Machine Make</label>
+                <input id="machineMake" name="machineMake" type="text" placeholder="Manufacturer" />
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn noPrint" onclick="window.print()">Print</button>
+                <button type="submit" class="btn primary noPrint">Save</button>
+            </div>
+        </form>
+    </main>
+<center>
+    <footer class="container site-footer">
+      Powered by Marvel Tech — Service Record for on-site visits.<br>
+        &copy; 2025 Marvel Tech. All rights reserved.
+    </footer>
+    </center>
+</body>
+</html>
